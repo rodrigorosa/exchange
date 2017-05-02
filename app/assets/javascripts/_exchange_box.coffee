@@ -14,3 +14,15 @@ $(document).ready ->
           success: (data, textStatus, jqXHR) ->
             $('#result').val(data.value)
         return false;
+
+  timeout = undefined
+  $('#quantity').on 'keydown', ->
+    if timeout
+      clearTimeout timeout
+      timeout = null
+    timeout = setTimeout((->
+      $('form').submit()
+      return
+    ), 500)
+    return
+
