@@ -16,7 +16,7 @@ $(document).ready ->
         return false;
 
   timeout = undefined
-  $('#quantity').on 'keydown', ->
+  $('#quantity').on 'keyup mouseup', ->
     if timeout
       clearTimeout timeout
       timeout = null
