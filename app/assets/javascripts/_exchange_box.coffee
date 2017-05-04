@@ -26,3 +26,11 @@ $(document).ready ->
     ), 500)
     return
 
+  $('#inverter').on 'click', ->
+    currency = $('#currency').val()
+    currency_destination = $('#currency_destination').val()
+    $('#currency').val(currency_destination)
+    $('#currency_destination').val(currency)
+    $('form').submit()
+    return
+
