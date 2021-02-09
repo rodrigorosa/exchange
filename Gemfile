@@ -39,7 +39,7 @@ source 'https://rails-assets.org' do
 end
 
 gem "font-awesome-rails"
-gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap', '~> 4.6.0'
 gem 'rest-client'
 
 group :development, :test do
